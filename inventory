@@ -1,0 +1,183 @@
+[asa]
+PN2-FW-5506X ansible_host=10.133.99.5
+
+[asa:vars]
+ansible_ssh_user=root
+ansible_ssh_pass=R00tP4ssw0rd
+ansible_connection=network_cli
+ansible_network_os=ios
+ansible_become=yes
+ansible_become_method=enable
+ansible_become_pass=3nabl3P4ssw0rd
+
+[routers]
+DC1-00051-RTR-ASR1 ansible_host=10.101.199.51
+DC1-00052-RTR-ASR2 ansible_host=10.101.199.52
+DC2-10051-RTR-ASR1 ansible_host=10.111.199.51
+DC2-10052-RTR-ASR2 ansible_host=10.111.199.52
+HNO-20051-RTR-ISR1 ansible_host=10.121.199.51
+HNO-20052-RTR-ISR2 ansible_host=10.121.199.52
+PND-50051-RTR-ISR1 ansible_host=10.151.200.1
+ROUTER_CORP_TEMP ansible_host=10.12.98.2
+router_hco_voice ansible_host=10.12.7.23
+router_hno_ipt ansible_host=10.121.255.55
+router_pno_ipt ansible_host=10.18.86.109
+router_pno_voice ansible_host=10.18.86.101
+switch_corp_rtr ansible_host=10.12.7.1
+
+[switches]
+DC1-00003-SW-MGMT ansible_host=10.101.199.4
+DC1-00006-SW-EDGE1 ansible_host=10.101.199.6
+DC1-00007-SW-EDGE2 ansible_host=10.101.199.7
+DC2-10003-SW-MGMT ansible_host=10.111.199.4
+DC2-10006-SW-EDGE1 ansible_host=10.111.199.6
+DC2-10007-SW-EDGE2 ansible_host=10.111.199.7
+HNO-10006-SW-EDGE1 ansible_host=10.121.199.6
+HNO-10007-SW-EDGE2 ansible_host=10.121.199.7
+HNO-20003-SW-MGMT ansible_host=10.121.199.4
+HNO-20011-SW-CORE ansible_host=10.121.199.11
+HNO-20012-SW-CORE ansible_host=10.121.199.12
+HNO-21566-SW-PLANTALARM1 ansible_host=10.1.4.99
+SW-Corp-11-1 ansible_host=10.12.7.3
+SW-Corp-11-2 ansible_host=10.12.7.4
+WPN-CH6-SW ansible_host=10.1.9.243
+WPN-DOCKS-SW ansible_host=10.1.9.241
+switch_corp_10th_1 ansible_host=10.12.7.11
+switch_corp_10th_2 ansible_host=10.12.7.12
+switch_corp_10th_3 ansible_host=10.12.7.13
+switch_corp_10th_4 ansible_host=10.12.7.14
+switch_corp_10th_5 ansible_host=10.12.7.15
+switch_corp_10th_6 ansible_host=10.12.7.16
+switch_corp_10th_7 ansible_host=10.12.7.17
+switch_hco_0 ansible_host=10.12.7.222
+switch_hno_7plex ansible_host=10.1.8.239
+switch_hno_C6506_core1 ansible_host=10.121.189.11
+switch_hno_C6506_core2 ansible_host=10.121.189.12
+switch_hno_Sec_Turnstile_Trailer ansible_host=10.1.32.10
+switch_hno_admin_1st_1 ansible_host=10.1.4.254
+switch_hno_admin_1st_2 ansible_host=10.1.4.252
+switch_hno_admin_2nd_1 ansible_host=10.1.5.254
+switch_hno_admin_2nd_2 ansible_host=10.1.5.253
+switch_hno_admin_2nd_3 ansible_host=10.1.5.199
+switch_hno_admin_2nd_north ansible_host=10.1.5.252
+switch_hno_admin_board ansible_host=10.1.4.201
+switch_hno_brm1 ansible_host=10.1.8.250
+switch_hno_brm2 ansible_host=10.1.8.251
+switch_hno_capitol_hill_trlr ansible_host=10.1.6.210
+switch_hno_ccb1 ansible_host=10.1.7.211
+switch_hno_ccb2 ansible_host=10.1.7.252
+switch_hno_change_room ansible_host=10.1.7.204
+switch_hno_ctrlhse_10 ansible_host=10.1.9.237
+switch_hno_ctrlhse_phoenix ansible_host=10.1.7.8
+switch_hno_cust_service ansible_host=10.1.4.205
+switch_hno_dehydro1 ansible_host=10.1.8.242
+switch_hno_east_overflow_trlr ansible_host=10.1.8.253
+switch_hno_east_west_tank ansible_host=10.1.9.7
+switch_hno_ecc ansible_host=10.1.9.202
+switch_hno_itc ansible_host=10.1.3.4
+switch_hno_itc2 ansible_host=10.1.3.8
+switch_hno_jacobs_trlr ansible_host=10.1.7.220
+switch_hno_lab ansible_host=10.1.10.6
+switch_hno_lab2 ansible_host=10.1.7.7
+switch_hno_lab_storage ansible_host=10.1.11.7
+switch_hno_machine_2 ansible_host=10.1.9.9
+switch_hno_maint1 ansible_host=10.1.6.254
+switch_hno_maint2 ansible_host=10.1.6.6
+switch_hno_maint3 ansible_host=10.1.6.220
+switch_hno_maint_time_office ansible_host=10.1.9.207
+switch_hno_netapp ansible_host=10.1.2.9
+switch_hno_new_devlab ansible_host=10.1.9.253
+switch_hno_octopus ansible_host=10.1.9.240
+switch_hno_phoenix_1 ansible_host=10.1.8.240
+switch_hno_phoenix_2 ansible_host=10.1.8.241
+switch_hno_procurement_trlr ansible_host=10.1.4.253
+switch_hno_sec_admin ansible_host=192.168.3.2
+switch_hno_sec_admin2 ansible_host=10.1.7.203
+switch_hno_sec_coldroom ansible_host=192.168.3.1
+switch_hno_sec_docks2 ansible_host=10.1.9.8
+switch_hno_sec_nwgate ansible_host=10.1.7.201
+switch_hno_sec_soc ansible_host=10.1.7.200
+switch_hno_sec_southgate ansible_host=10.1.7.202
+switch_hno_shop2 ansible_host=10.1.9.208
+switch_hno_shop2_2 ansible_host=10.1.9.252
+switch_hno_south_tank ansible_host=10.1.9.6
+switch_hno_supershack ansible_host=10.1.9.200
+switch_hno_supply_chain_trlr ansible_host=10.1.4.251
+switch_hno_tankcar_south ansible_host=10.1.8.243
+switch_hno_technology_center ansible_host=10.1.12.5
+switch_hno_toolroom ansible_host=10.1.8.10
+switch_hno_training_trlr ansible_host=10.1.4.249
+switch_hno_truck_rack ansible_host=10.1.7.251
+switch_hno_truck_scale ansible_host=10.1.7.225
+switch_hno_warehouse ansible_host=10.1.9.201
+switch_hno_water_treat ansible_host=10.1.9.250
+switch_hno_water_treat_2 ansible_host=10.1.9.251
+switch_hno_west_overflow_trlr ansible_host=10.1.8.7
+switch_lco_gate ansible_host=10.1.17.220
+switch_lco_office ansible_host=10.1.17.221
+switch_pno_IT_imageing ansible_host=10.18.86.85
+switch_pno_TAG_trlr ansible_host=10.18.86.104
+switch_pno_admin1 ansible_host=10.18.86.245
+switch_pno_admin2 ansible_host=10.18.86.250
+switch_pno_admin3 ansible_host=10.18.86.248
+switch_pno_admin4 ansible_host=10.18.86.20
+switch_pno_admin5 ansible_host=10.18.86.240
+switch_pno_adminit1 ansible_host=10.18.86.254
+switch_pno_alab1 ansible_host=10.18.86.18
+switch_pno_bldg15 ansible_host=10.18.86.24
+switch_pno_boiler7 ansible_host=10.18.86.57
+switch_pno_boiler_house4 ansible_host=10.18.86.106
+switch_pno_boiler_makers ansible_host=10.18.86.105
+switch_pno_ccb_core6 ansible_host=10.18.86.16
+switch_pno_ccb_core7 ansible_host=10.18.86.12
+switch_pno_ccb_core8 ansible_host=10.18.86.94
+switch_pno_ccb_serverfarm1 ansible_host=10.18.86.9
+switch_pno_ccb_serverfarm2 ansible_host=10.18.86.249
+switch_pno_cm_bldg ansible_host=10.18.86.96
+switch_pno_dock_gate ansible_host=10.16.1.11
+switch_pno_dock_house ansible_host=10.16.1.1
+switch_pno_electric ansible_host=10.18.86.103
+switch_pno_glab1 ansible_host=10.18.86.4
+switch_pno_guard1 ansible_host=10.18.86.44
+switch_pno_guard1_twic ansible_host=10.18.86.35
+switch_pno_guard2_twic ansible_host=10.18.86.36
+switch_pno_im_bldg ansible_host=10.18.86.100
+switch_pno_instrument ansible_host=10.18.86.241
+switch_pno_isopreme ansible_host=10.18.86.252
+switch_pno_safety_walkaround ansible_host=10.18.86.92
+switch_pno_telco1 ansible_host=10.18.86.19
+switch_pno_telco4 ansible_host=10.18.86.112
+switch_pno_telco5 ansible_host=10.18.86.108
+switch_pno_telco_0 ansible_host=10.18.86.14
+switch_pno_training ansible_host=10.18.86.246
+switch_pno_warehouse ansible_host=10.18.86.102
+switch_pno_welders ansible_host=10.18.86.244
+
+[ios:children]
+routers
+switches
+
+[ios:vars]
+ansible_ssh_user=root
+ansible_ssh_pass=R00tP4ssw0rd
+ansible_connection=network_cli
+ansible_network_os=ios
+ansible_become=yes
+ansible_become_method=enable
+ansible_become_pass=3nabl3P4ssw0rd
+
+
+[nxos]
+DC1-00011-SW-CORE ansible_host=10.101.199.11
+DC1-00012-SW-CORE ansible_host=10.101.199.12
+DC2-10011-SW-CORE ansible_host=10.111.199.11
+DC2-10012-SW-CORE ansible_host=10.111.199.12
+
+[nxos:vars]
+ansible_ssh_user=root
+ansible_ssh_pass=R00tP4ssw0rd
+ansible_connection=network_cli
+ansible_network_os=ios
+ansible_become=yes
+ansible_become_method=enable
+ansible_become_pass=3nabl3P4ssw0rd

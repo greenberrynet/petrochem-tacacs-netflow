@@ -1,0 +1,16 @@
+tacacs server LICVCISCOISE01-TACACS
+ address ipv4 10.101.199.90
+ key TPCP3tr0ch3m
+tacacs server LICVCISCOISE02-TACACS
+ address ipv4 10.111.199.90
+ key TPCP3tr0ch3m
+!
+aaa group server tacacs+ ISE-TACACS
+ server name LICVCISCOISE01-TACACS
+ server name LICVCISCOISE02-TACACS
+
+aaa authentication login default group ISE-TACACS local
+aaa authentication enable default group ISE-TACACS local
+aaa authorization exec default group ISE-TACACS local
+aaa accounting exec default start-stop group ISE-TACACS
+aaa accounting network default start-stop group ISE-TACACS

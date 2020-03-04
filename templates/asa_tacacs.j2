@@ -1,0 +1,12 @@
+aaa-server ISE-TACACS protocol tacacs+
+aaa-server ISE-TACACS (INSIDE) host 10.101.199.90
+ key TPCP3tr0ch3m
+aaa-server ISE-TACACS (INSIDE) host 10.111.199.90
+ key TPCP3tr0ch3m
+aaa authentication ssh console ISE-TACACS LOCAL
+aaa authentication enable console ISE-TACACS LOCAL
+aaa authentication http console ISE-TACACS LOCAL
+aaa accounting enable console ISE-TACACS
+aaa accounting ssh console ISE-TACACS
+no aaa authentication ssh console LOCAL
+
